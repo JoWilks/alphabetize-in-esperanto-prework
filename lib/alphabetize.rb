@@ -1,9 +1,6 @@
 def alphabetize(arr)
   esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split(//)
 
-  first_order = arr.sort_by {|a| esp_alphabet.index(a) }
-  
-  #if first_order #has any phrases that start with same letter do:
-  #second_order = arr.sort_by {|a| esp_alphabet.index(a)}
+  arr.sort_by {|phrase| phrase.chars.map {|c|esp_alphabet.index(c)}}
   
 end
