@@ -1,6 +1,6 @@
 def alphabetize(arr)
   esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split(//)
 
-  arr.sort_by {|phrase| esp_alphabet.each {|letter|   }
+  first_order = arr.sort_by {|a| esp_alphabet.index(a[0])}
   
 end
